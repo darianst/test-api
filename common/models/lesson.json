@@ -1,0 +1,31 @@
+{
+  "name": "lesson",
+  "plural": "lessons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "route": {
+      "type": "object"
+    }
+  },
+  "hidden": ["route"],
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
